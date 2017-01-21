@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "first_name": "Ruben",
+      "last_name": "Gil",
+      "email": "rgil@gmail.com",
+      "password": "password",
+      "type": "donor"
+    },
+    {
+      "first_name": "Joshua",
+      "last_name": "Fermin",
+      "email": "jfermin@gmail.com",
+      "password": "password",
+      "type": "donor"
+    },
+    {
+      "first_name": "Allen",
+      "last_name": "Turing",
+      "email": "aturing@gmail.com",
+      "password": "password",
+      "type": "recipient"
+    },
+    {
+      "first_name": "Brendan",
+      "last_name": "Eich",
+      "email": "beich@gmail.com",
+      "password": "password",
+      "type": "recipient"
+    }
+  ]
+}
