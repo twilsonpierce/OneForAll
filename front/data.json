@@ -6,6 +6,7 @@
       "email": "rgil@gmail.com",
       "password": "password",
       "type": "donor",
+      "zip": "11369",
       "items": {
         "canned_fruit": 3,
         "dry_mac_and_cheese": 1,
@@ -33,6 +34,7 @@
       "email": "jfermin@gmail.com",
       "password": "password",
       "type": "donor",
+      "zip": "11368",
       "items": {
         "canned_fruit": 3,
         "dry_mac_and_cheese": 1,
@@ -59,6 +61,7 @@
       "last_name": "Turing",
       "email": "aturing@gmail.com",
       "password": "password",
+      "zip": "11369",
       "type": "recipient"
     },
     {
@@ -66,6 +69,7 @@
       "last_name": "Eich",
       "email": "beich@gmail.com",
       "password": "password",
+      "zip": "11368",
       "type": "recipient"
     }
   ]
