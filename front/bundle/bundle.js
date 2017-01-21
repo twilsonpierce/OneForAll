@@ -58,13 +58,18 @@
 	
 	var _DonorReg2 = _interopRequireDefault(_DonorReg);
 	
+	var _DonorMain = __webpack_require__(235);
+	
+	var _DonorMain2 = _interopRequireDefault(_DonorMain);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = function App(props) {
 	  return _react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.browserHistory },
-	    _react2.default.createElement(_reactRouter.Route, { path: '/donor-registration', component: _DonorReg2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/donor-registration', component: _DonorReg2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/donor/:id', component: _DonorMain2.default })
 	  );
 	};
 	
@@ -26540,7 +26545,153 @@
 /* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _data = __webpack_require__(234);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
+	var DonorReg = _react2.default.createClass({
+	  displayName: 'DonorReg',
+	  getInitialState: function getInitialState() {
+	    return { name: '', email: '', password: '', zip: '' };
+	  },
+	  handleChange: function handleChange(type, e) {
+	    this.setState(_defineProperty({}, type, e.target.value));
+	  },
+	  handleSubmit: function handleSubmit(e) {
+	    e.preventDefault();
+	
+	    _data2.default.users.push(this.state);
+	
+	    var userId = _data2.default.users.length - 1;
+	
+	    _reactRouter.browserHistory.push('/donor/' + userId);
+	    console.log(this.state);
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'form',
+	        { onSubmit: this.handleSubmit },
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'Name', onChange: this.handleChange.bind(this, 'name') }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'Email', onChange: this.handleChange.bind(this, 'email') }),
+	        _react2.default.createElement('input', { type: 'password', placeholder: 'Password', onChange: this.handleChange.bind(this, 'password') }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'Address' }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'City' }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'State' }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'Zip Code', onChange: this.handleChange.bind(this, 'zip') }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'Phone Number' }),
+	        _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = DonorReg;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports) {
+
 	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  "users": [{
+	    "first_name": "Ruben",
+	    "last_name": "Gil",
+	    "email": "rgil@gmail.com",
+	    "password": "password",
+	    "type": "donor",
+	    "zip": "11369",
+	    "items": {
+	      "canned_fruit": 3,
+	      "dry_mac_and_cheese": 1,
+	      "canned_soup": 0,
+	      "canned_tuna": 4,
+	      "other_canned_meats": 0,
+	      "spaghetti_sauce": 3,
+	      "pasta": 4,
+	      "peanut_butter": 2,
+	      "jelly": 2,
+	      "pork_and_beans": 1,
+	      "beans": 4,
+	      "juices": 2,
+	      "tea": 1,
+	      "coffee": 4,
+	      "crackers": 8,
+	      "flour": 0,
+	      "sugar": 0,
+	      "powdered_milk": 2
+	    }
+	  }, {
+	    "first_name": "Joshua",
+	    "last_name": "Fermin",
+	    "email": "jfermin@gmail.com",
+	    "password": "password",
+	    "type": "donor",
+	    "zip": "11368",
+	    "items": {
+	      "canned_fruit": 3,
+	      "dry_mac_and_cheese": 1,
+	      "canned_soup": 1,
+	      "canned_tuna": 4,
+	      "other_canned_meats": 0,
+	      "spaghetti_sauce": 4,
+	      "pasta": 8,
+	      "peanut_butter": 6,
+	      "jelly": 6,
+	      "pork_and_beans": 1,
+	      "beans": 0,
+	      "juices": 2,
+	      "tea": 0,
+	      "coffee": 4,
+	      "crackers": 8,
+	      "flour": 0,
+	      "sugar": 1,
+	      "powdered_milk": 2
+	    }
+	  }, {
+	    "first_name": "Allen",
+	    "last_name": "Turing",
+	    "email": "aturing@gmail.com",
+	    "password": "password",
+	    "zip": "11369",
+	    "type": "recipient"
+	  }, {
+	    "first_name": "Brendan",
+	    "last_name": "Eich",
+	    "email": "beich@gmail.com",
+	    "password": "password",
+	    "zip": "11368",
+	    "type": "recipient"
+	  }]
+	};
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26552,30 +26703,25 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var DonorReg = _react2.default.createClass({
-	  displayName: "DonorReg",
+	var DonorMain = _react2.default.createClass({
+	  displayName: 'DonorMain',
+	  getInitialState: function getInitialState() {
+	    return { userId: this.props.params.id };
+	  },
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
+	      'div',
 	      null,
 	      _react2.default.createElement(
-	        "form",
+	        'h1',
 	        null,
-	        _react2.default.createElement("input", { type: "text", placeholder: "Name" }),
-	        _react2.default.createElement("input", { type: "text", placeholder: "Email" }),
-	        _react2.default.createElement("input", { type: "password", placeholder: "Password" }),
-	        _react2.default.createElement("input", { type: "text", placeholder: "Address" }),
-	        _react2.default.createElement("input", { type: "text", placeholder: "City" }),
-	        _react2.default.createElement("input", { type: "text", placeholder: "State" }),
-	        _react2.default.createElement("input", { type: "text", placeholder: "Zip Code" }),
-	        _react2.default.createElement("input", { type: "text", placeholder: "Phone Number" }),
-	        _react2.default.createElement("input", { type: "submit", value: "Submit" })
+	        'UserId: ' + this.props.params.id
 	      )
 	    );
 	  }
 	});
 	
-	exports.default = DonorReg;
+	exports.default = DonorMain;
 
 /***/ }
 /******/ ]);
