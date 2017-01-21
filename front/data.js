@@ -1,4 +1,4 @@
-{
+export default {
   "users": [
     {
       "first_name": "Ruben",
