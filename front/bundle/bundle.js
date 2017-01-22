@@ -58,12 +58,17 @@
 	
 	var _DonorReg2 = _interopRequireDefault(_DonorReg);
 	
+	var _LandingPage = __webpack_require__(234);
+	
+	var _LandingPage2 = _interopRequireDefault(_LandingPage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = function App(props) {
 	  return _react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.browserHistory },
+	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _LandingPage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/donor-registration', component: _DonorReg2.default })
 	  );
 	};
@@ -26576,6 +26581,103 @@
 	});
 	
 	exports.default = DonorReg;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
+	var LandingPage = _react2.default.createClass({
+	  displayName: "LandingPage",
+	  getInitialState: function getInitialState() {
+	    return { email: "", password: "", zip: "11368" };
+	  },
+	  change: function change(key, e) {
+	    this.setState(_defineProperty({}, key, e.change.value));
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      null,
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement("img", { src: "#" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "form",
+	            null,
+	            _react2.default.createElement("input", { type: "text", onChange: this.change.bind(this, "email"), value: this.state.email }),
+	            _react2.default.createElement("input", { type: "text", onChange: this.change.bind(this, "password"), value: this.state.password }),
+	            _react2.default.createElement("input", { type: "submit" })
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "button",
+	            null,
+	            "give a box"
+	          ),
+	          _react2.default.createElement(
+	            "button",
+	            null,
+	            "get a box"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "LEARN MORE ABOUT HOW TO BETTER YOUR NUTRITION"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("input", { type: "number", placeholder: "enter your zip code", value: this.state.zip, onChange: this.change.bind(this, "zip"), maxlength: "5" }),
+	            _react2.default.createElement(
+	              "button",
+	              null,
+	              "search"
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = LandingPage;
 
 /***/ }
 /******/ ]);
