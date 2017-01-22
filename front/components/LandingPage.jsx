@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Recipient.css';
 
 const LandingPage = React.createClass({
   getInitialState(){
@@ -9,14 +10,14 @@ const LandingPage = React.createClass({
   },
   render(){
     return (
-      <div>
+      <div className="navbarParent">
         {/*nav bar */}
-        <div>
-          <div>
-            <img src="#"/>
+        <div className="navbarOne">
+          <div className="logo">
+            <img src="/logo.png"/>
           </div>
-          <div>
-            <form>
+          <div className="navbarLogin">
+            <form className="userLogin">
               <input type="text" onChange={this.change.bind(this,"email")} value={this.state.email}/>
               <input type="text" onChange={this.change.bind(this,"password")} value={this.state.password}/>
               <input type="submit" />
@@ -25,7 +26,7 @@ const LandingPage = React.createClass({
         </div>
         {/*nav bar ends*/}
         {/*Body*/}
-        <div>
+        <div className="">
           <div>
             <button>
               give a box
