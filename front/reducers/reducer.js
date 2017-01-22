@@ -1,6 +1,6 @@
 import data from '../data';
 import {browserHistory} from 'react-router';
-import {REGISTER, LOGIN} from '../actions/actions';
+import {REGISTER, LOGIN, DONATE, SUBMIT_DONATION} from '../actions/actions';
 
 const defaultState = data;
 
@@ -18,6 +18,10 @@ const reducer = (state = defaultState, action) => {
       browserHistory.push(`/donor/${userId}`);
 
       return state;
+    case DONATE:
+      return Object.assign({}, state, {donation, numOfItems});
+    case SUBMIT_DONATION:
+      return Object.assign({}, state, action.data);
     default:
       return state;
   }
