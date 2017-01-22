@@ -20,18 +20,19 @@ const LandingPage = React.createClass({
             <form className="userLogin">
               <input type="text" onChange={this.change.bind(this,"email")} value={this.state.email}/>
               <input type="text" onChange={this.change.bind(this,"password")} value={this.state.password}/>
-              <input type="submit" />
+              <button id="login-button"><img src="/login-button.png" /></button>
             </form>
           </div>
         </div>
         {/*nav bar ends*/}
         {/*Body*/}
-        <div className="">
-          <div>
-            <button>
+        <div className="buttonLanding">
+          <div className="landingPageButtons">
+            <img src="/frontPagePic.jpg" />
+            <button className="landingPageButton1">
               give a box
             </button>
-            <button>
+            <button className="landingPageButton2">
               get a box
             </button>
           </div>
