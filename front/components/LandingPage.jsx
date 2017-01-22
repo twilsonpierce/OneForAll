@@ -41,7 +41,7 @@ const LandingPage = React.createClass({
           <div>
             <p>LEARN MORE ABOUT HOW TO BETTER YOUR NUTRITION</p>
             <div>
-              <input type="number" placeholder="enter your zip code" value={this.state.zip} onChange={this.change.bind(this,"zip")} maxlength="5"/>
+              <input type="number" placeholder="enter your zip code" value={this.state.zip} onChange={this.change.bind(this,"zip")}/>
               <button>
               search
               </button>
