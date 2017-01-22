@@ -19,8 +19,13 @@ const reducer = (state = defaultState, action) => {
         console.log(ele)
         console.log(action.data)
         if(ele.email == action.data.email && ele.password == action.data.password){
-          user = ele
-          browserHistory.push(`/donor/${idx}`);
+
+          if(ele.type === "doner"){
+            browserHistory.push(`/donor/${idx}`);
+          }else {
+            //this a place holder for recipient
+            browserHistory.push(`/something/${idx}`);
+          }
         }
       })
       
