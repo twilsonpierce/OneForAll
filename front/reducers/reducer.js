@@ -14,10 +14,17 @@ const reducer = (state = defaultState, action) => {
       return Object.assign({}, state, {users: newUserList, userId});
     case LOGIN:
       //TEST
-      // let userId = newUserList.length - 1;
-
-      browserHistory.push(`/donor/${userId}`);
-      return state;
+      let user
+      state.users.forEach((ele,idx)=>{
+        console.log(ele)
+        console.log(action.data)
+        if(ele.email == action.data.email && ele.password == action.data.password){
+          user = ele
+          browserHistory.push(`/donor/${idx}`);
+        }
+      })
+      
+      Object.assign({}, state, {loggedIn: user})
     default:
       return state;
   }
