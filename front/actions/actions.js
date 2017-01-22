@@ -7,5 +7,6 @@ export const register = (data) => ({
 })
 
 export const login = (data) => ({
-  type: LOGIN
+  type: LOGIN,
+  data: data
 })
