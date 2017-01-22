@@ -42,17 +42,6 @@ const LandingPage = React.createClass({
           </div>
         </div>
         {/*end of body*/}
-        {/*nutrition*/}
-          <div className="landingPageFooter">
-            <div className="pageFooter">
-            <h1 className="learnNutrition">LEARN MORE ABOUT HOW TO BETTER YOUR NUTRITION</h1>
-              <input className="nutritionZip" type="number" placeholder="   Enter Your Zip Code" value={this.state.zip} onChange={this.change.bind(this,"zip")}/>
-              <button className="nutritionButton">
-                <img className="nutritionButton" src="/login-button.png" />
-              </button>
-            </div>
-          </div>
-        {/*end of nutrition*/}
       </div>
     )
   }
