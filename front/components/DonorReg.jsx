@@ -14,7 +14,6 @@ const DonorReg = React.createClass({
 
     store.dispatch(register(this.state))
 
-    //console.log(this.state);
   },
   render(){
     return (

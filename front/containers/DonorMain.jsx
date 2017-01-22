@@ -1,13 +1,16 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import DonationForm from '../components/DonationForm';
 
 //Page shown after user(donor) logs in
 const DonorMain = React.createClass({
   render(){
+    let userId = this.props.state.userId;
 
     return (
       <div>
-        <h1>{'UserId: ' + this.props.state.userId}</h1>
+        <h2>Donation List</h2>
+        <DonationForm state={this.props.state}/>
       </div>
     )
   }
