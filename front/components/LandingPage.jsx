@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import '../Recipient.css';
 
 const LandingPage = React.createClass({
   getInitialState(){
@@ -10,7 +11,7 @@ const LandingPage = React.createClass({
   },
   nutrition(){
     $.ajax({
-      url:"https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/"+this.state.zip+"/programs?api_key=fb8edd11a14dc07088e183b288c2503c&serviceTag=Nutrition+Education&cursor=0&limit=10",
+      url:"https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/" + this.state.zip + "/programs?api_key=fb8edd11a14dc07088e183b288c2503c&serviceTag=Nutrition+Education&cursor=0&limit=10",
       type: "GET",
     })
     .done(data => {
@@ -20,14 +21,14 @@ const LandingPage = React.createClass({
   render(){
     console.log(this.state.programs)
     return (
-      <div>
+      <div className="navbarParent">
         {/*nav bar */}
-        <div>
-          <div>
-            <img src="#"/>
+        <div className="navbarOne">
+          <div className="logo">
+            <img src="/logo.png"/>
           </div>
-          <div>
-            <form>
+          <div className="navbarLogin">
+            <form className="userLogin">
               <input type="text" onChange={this.change.bind(this,"email")} value={this.state.email}/>
               <input type="text" onChange={this.change.bind(this,"password")} value={this.state.password}/>
               <input type="submit" />
@@ -36,7 +37,7 @@ const LandingPage = React.createClass({
         </div>
         {/*nav bar ends*/}
         {/*Body*/}
-        <div>
+        <div className="">
           <div>
             <button>
               give a box
