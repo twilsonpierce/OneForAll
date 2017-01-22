@@ -62,7 +62,7 @@ export default {
       "email": "aturing@gmail.com",
       "password": "password",
       "zip": "11369",
-      "type": "recipient"
+      "type": "recipient",
     },
     {
       "first_name": "Brendan",
