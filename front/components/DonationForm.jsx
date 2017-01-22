@@ -63,7 +63,7 @@ const DonationForm = React.createClass({
     }
 
     let preparedState = Object.assign({}, this.state, {donations})
-
+    
     //Add info in local state to store
     store.dispatch(submit_donation(preparedState));
   },

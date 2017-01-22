@@ -2,7 +2,7 @@ import data from '../data';
 import {browserHistory} from 'react-router';
 import {REGISTER, LOGIN, DONATE, SUBMIT_DONATION} from '../actions/actions';
 
-const defaultState = data;
+const defaultState = Object.assign({}, data, {donationMade: false});
 
 const reducer = (state = defaultState, action) => {
   switch(action.type){
@@ -24,9 +24,14 @@ const reducer = (state = defaultState, action) => {
 
       Object.assign({}, state, {loggedIn: user})
     case DONATE:
-      return Object.assign({}, state, {donation, numOfItems});
+      console.log(state)
+      return Object.assign({}, state, {donation, numOfItems, donationMade: true});
     case SUBMIT_DONATION:
-      return Object.assign({}, state, action.data);
+      let {donations, numOfItems} = action.data;
+
+      console.log(action.data);
+
+      return Object.assign({}, state, {donations, numOfItems, donationMade: true});
     default:
       return state;
   }
