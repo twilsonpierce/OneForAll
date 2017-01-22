@@ -9,20 +9,29 @@ const reducer = (state = defaultState, action) => {
     case REGISTER:
       let newUserList = [...state.users];
       newUserList.push(action.data);
+      let id = newUserList.length-1
+     
+      if(action.data.type === "donor"){
+        browserHistory.push(`/donor/${id}`);
+      }else {
+        browserHistory.push(`/recipient/${id}`);
+      }
 
-      return Object.assign({}, state, {users: newUserList, userId});
+      return Object.assign({}, state, {users: newUserList, loggedIn:action.data});
     case LOGIN:
       let user
       state.users.forEach((ele,idx)=>{
-        console.log(ele)
-        console.log(action.data)
+        
         if(ele.email == action.data.email && ele.password == action.data.password){
-          user = ele
-          browserHistory.push(`/donor/${idx}`);
+
+          if(ele.type === "donor"){
+            browserHistory.push(`/donor/${idx}`);
+          }else {
+            browserHistory.push(`/recipient/${idx}`);
+          }
         }
       })
-
-      Object.assign({}, state, {loggedIn: user})
+      return Object.assign({}, state, {loggedIn: user})
     case DONATE:
       return Object.assign({}, state, {donation, numOfItems});
     case SUBMIT_DONATION:

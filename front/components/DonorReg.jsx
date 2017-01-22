@@ -4,7 +4,7 @@ import {register} from '../actions/actions';
 
 const DonorReg = React.createClass({
   getInitialState(){
-    return {name: '', email: '', password: '', zip:''}
+    return {name: '', email: '', password: '', zip:'', type: 'donor'}
   },
   handleChange(type, e){
     this.setState({[type]: e.target.value});

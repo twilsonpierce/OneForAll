@@ -1,6 +1,6 @@
 import React from 'react';
 import store from '../store/store';
-import  {login} from '../actions/actions';
+import {login} from '../actions/actions';
 import '../Recipient.css';
 
 const LandingPage = React.createClass({
@@ -13,6 +13,12 @@ const LandingPage = React.createClass({
   onSubmit(e){
     e.preventDefault();
     store.dispatch(login({email: this.state.email, password: this.state.password}))
+  },
+  donorRegistration(){
+    this.props.router.push('/donor-registration')
+  },
+  recipientRegistration(){
+    this.props.router.push('/recipient-registration')
   },
   render(){
     return (
@@ -30,7 +36,7 @@ const LandingPage = React.createClass({
                 <input className="inputBox" type="text" placeholder="Username" onChange={this.change.bind(this,"email")} value={this.state.email}/>
                 <input className="inputBox" type="text" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
                 <button className="loginButton">
-                    <img className="loginButton" src="/login-button.png" />
+                  <img className="loginButton" src="/login-button.png" />
                 </button>
               </div>
             </form>
@@ -41,10 +47,10 @@ const LandingPage = React.createClass({
         <div className="buttonLanding">
           <div className="landingPageButtons">
             <img src="/l.jpg" />
-            <button className="landingPageButton1">
+            <button className="landingPageButton1" onClick={this.donorRegistration}>
               <h2 className="landingButtonTitle"> Give A Box </h2>
             </button>
-            <button className="landingPageButton2">
+            <button className="landingPageButton2" onClick={this.recipientRegistration}>
               <h2 className="landingButtonTitle"> Get A Box </h2>
             </button>
           </div>
