@@ -1,6 +1,6 @@
 import React from 'react';
-import {browserHistory} from 'react-router';
-import data from '../data.js';
+import store from '../store/store';
+import {register} from '../actions/actions';
 
 const DonorReg = React.createClass({
   getInitialState(){
@@ -12,12 +12,9 @@ const DonorReg = React.createClass({
   handleSubmit(e){
     e.preventDefault();
 
-    data.users.push(this.state);
+    store.dispatch(register(this.state))
 
-    let userId = data.users.length - 1;
-
-    browserHistory.push(`/donor/${userId}`);
-    console.log(this.state);
+    //console.log(this.state);
   },
   render(){
     return (
