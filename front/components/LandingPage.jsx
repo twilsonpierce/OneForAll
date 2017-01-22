@@ -1,54 +1,55 @@
 import React from 'react';
+import store from '../store/store';
+import  {login} from '../actions/actions';
+import '../Recipient.css';
 
 const LandingPage = React.createClass({
   getInitialState(){
-    return{email:"", password:"", zip:"11368"}
+    return{email:"rgil@gmail.com", password:"password", zip:"11368"}
   },
   change(key, e){
-    this.setState({[key]: e.change.value})
+    this.setState({[key]: e.target.value})
+  },
+  onSubmit(e){
+    e.preventDefault();
+    store.dispatch(login({email: this.state.email, password: this.state.password}))
   },
   render(){
     return (
-      <div>
+      <div className="navbar">
         {/*nav bar */}
-        <div>
-          <div>
-            <img src="#"/>
-          </div>
-          <div>
-            <form>
-              <input type="text" onChange={this.change.bind(this,"email")} value={this.state.email}/>
-              <input type="text" onChange={this.change.bind(this,"password")} value={this.state.password}/>
-              <input type="submit" />
+      <div className="navbarParent">
+        <div className="navbarOne">
+            <img src="/logo.png"/>
+        </div>
+          <div className="navbarTwo">
+            <form onSubmit={this.onSubmit}>          
+              <div className="navbarSignUp">
+                {/* <h4 className="login">Username:</h4>*/}
+                {/* <h4 className="login">Password:</h4>*/}
+                <input className="inputBox" type="text" placeholder="Username" onChange={this.change.bind(this,"email")} value={this.state.email}/>
+                <input className="inputBox" type="text" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
+                <button className="loginButton">
+                    <img className="loginButton" src="/login-button.png" />
+                </button>
+              </div>
             </form>
-          </div>
+            </div>
         </div>
         {/*nav bar ends*/}
         {/*Body*/}
-        <div>
-          <div>
-            <button>
-              give a box
+        <div className="buttonLanding">
+          <div className="landingPageButtons">
+            <img src="/l.jpg" />
+            <button className="landingPageButton1">
+              <h2 className="landingButtonTitle"> Give A Box </h2>
             </button>
-            <button>
-              get a box
+            <button className="landingPageButton2">
+              <h2 className="landingButtonTitle"> Get A Box </h2>
             </button>
           </div>
         </div>
         {/*end of body*/}
-        {/*nutrition*/}
-        <div>
-          <div>
-            <p>LEARN MORE ABOUT HOW TO BETTER YOUR NUTRITION</p>
-            <div>
-              <input type="number" placeholder="enter your zip code" value={this.state.zip} onChange={this.change.bind(this,"zip")}/>
-              <button>
-              search
-              </button>
-            </div>
-          </div>
-        </div>
-        {/*end of nutrition*/}
       </div>
     )
   }
