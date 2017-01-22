@@ -14,9 +14,9 @@ const reducer = (state = defaultState, action) => {
       return Object.assign({}, state, {users: newUserList, userId});
     case LOGIN:
       //TEST
-      let userId = newUserList.length - 1;
-      browserHistory.push(`/donor/${userId}`);
+      // let userId = newUserList.length - 1;
 
+      browserHistory.push(`/donor/${userId}`);
       return state;
     default:
       return state;
