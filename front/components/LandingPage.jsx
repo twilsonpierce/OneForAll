@@ -33,12 +33,16 @@ const LandingPage = React.createClass({
         <div className="buttonLanding">
           <div className="landingPageButtons">
             <img src="/l.jpg" />
-            <button className="landingPageButton1">
-              <h2 className="landingButtonTitle"> Give A Box </h2>
-            </button>
-            <button className="landingPageButton2">
-              <h2 className="landingButtonTitle"> Get A Box </h2>
-            </button>
+          <div className="landTitleText">
+            <h1>For The Families Who Just Need A little Extra Chow!</h1>
+            <h1>For The Families Who Just Need A little Extra Chow!</h1>
+          </div>
+            <button className="landingPageButton1"></button>
+            <button className="landingPageButton2"></button>
+            <div className="landingButtonTitle">
+              <h2 className="landingButtonTitle1"> Give A Box </h2>
+              <h2 className="landingButtonTitle2"> Get A Box </h2>
+            </div>
           </div>
         </div>
         {/*end of body*/}

@@ -30,6 +30,7 @@ h4.login{
 
 .inputBox{
   border-radius: 9px;
+  border: 1px solid #A9A9A9;
   width: 150px;
   height: 25px;
   margin-top: 10px;
@@ -63,6 +64,8 @@ button.loginButton{
   display: flex;
   align-items: center;
   background-color: purple;
+  height: 650px;
+  overflow: hidden;
 }
 
 h2.landingButtonTitle {
@@ -95,13 +98,40 @@ h2.landingButtonTitle {
   border-style: none;
   position: absolute;
   top: 275px;
-  left: 325px;
+  left: 350px;
   opacity: 0.6;
 }
 
+.landTitleText{
+  position: absolute;
+  top: 130px;
+  left: 175px;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-shadow: 0 4px 3px rgba(0,0,0,.4), 0 -3px 1px rgba(0,0,0,.1), 0 6px 6px rgba(0,0,0,.1);
+}
+
+.landingButtonTitle1{
+position: absolute;
+top: 330px;
+left: 725px;
+color: white;
+font-size: 1.7em;
+}
+
+.landingButtonTitle2{
+  position: absolute;
+  top: 330px;
+  left: 380px;
+  color: white;
+  font-size: 1.7em;
+}
+
 .landingPageButtons img{
-  max-height:625px;
+  height: auto;
   width: 100%;
+
 }
 
 .landingPageFooter{
