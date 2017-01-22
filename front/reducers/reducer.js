@@ -10,11 +10,10 @@ const reducer = (state = defaultState, action) => {
       let newUserList = [...state.users];
       newUserList.push(action.data);
       let id = newUserList.length-1
-      console.log(action.data);
+     
       if(action.data.type === "donor"){
         browserHistory.push(`/donor/${id}`);
       }else {
-        //this a place holder for recipient
         browserHistory.push(`/recipient/${id}`);
       }
 
@@ -28,7 +27,6 @@ const reducer = (state = defaultState, action) => {
           if(ele.type === "donor"){
             browserHistory.push(`/donor/${idx}`);
           }else {
-            //this a place holder for recipient
             browserHistory.push(`/recipient/${idx}`);
           }
         }
