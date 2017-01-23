@@ -29,6 +29,7 @@ const reducer = (state = defaultState, action) => {
           }else {
             browserHistory.push(`/recipient/${idx}`);
           }
+          user = ele
         }
       })
       return Object.assign({}, state, {loggedIn: user})
