@@ -92,9 +92,12 @@ h2.landingButtonTitle {
   opacity: 0.6;
 }
 
+.landingPageButton1:hover, .landingPageButton2:hover{
+  background-color: #8227A4;
+}
+
 button:hover{
   cursor: pointer;
-  background-color: #8227A4;
 }
 
 .landingPageButton2{
