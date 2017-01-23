@@ -31,7 +31,7 @@ const RecipientRegPage = React.createClass({
         </div>
         <div className="receiveIntro">
           <div className="receiveIntro1">
-            You’re On Way To Receiving Your First Box!
+            You’re On Your Way To Receiving Your First Box!
           </div>
             <form onSubmit={this.onSubmit} className="regPage">
               <div className="regPageBox1">
