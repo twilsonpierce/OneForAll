@@ -40,7 +40,7 @@ const Map = React.createClass({
   render(){
     return (
       <div id="map-container">
-        <div id="map" style={{width: "500px", height: "400px"}}></div>
+        <div id="map" style={{width: "700px", height: "400px"}}></div>
       </div>
     )
   }
