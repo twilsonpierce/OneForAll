@@ -5,7 +5,7 @@ export default {
       "last_name": "Gil",
       "email": "rgil@gmail.com",
       "password": "password",
-      "type": "donor",
+      "type": "recipient",
       "zip": "11369",
       "items": {
         "canned_fruit": 3,
@@ -81,7 +81,7 @@ export default {
       "Canned of Vegetables(All)": 3,
       "Canned of Spaghetti Sauce": 3,
     },
-     { 
+     {
       "Large Juices": 3,
       "Boxes of Oatmeal": 3,
       "Boxes of Dry Macaroni and Cheese": 3,
