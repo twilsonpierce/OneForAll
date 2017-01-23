@@ -23,19 +23,18 @@ const RecipientRegPage = React.createClass({
   render(){
     return(
       <div>
-        <div>      
+        <div>
           <div className="navbarOne">
               <img src="/logo.png"/>
-          </div>
+            </div>
+            <div className="navbarBorder"></div>
         </div>
-        <div>
-          <div>
-            SIGN UP TODAY & GET A BOX
+        <div className="receiveIntro">
+          <div className="receiveIntro1">
+            You’re On Your Way To Receiving Your First Box!
           </div>
-          <div>
-            <div>
-            <form onSubmit={this.onSubmit}>
-              <div>
+            <form onSubmit={this.onSubmit} className="regPage">
+              <div className="regPageBox1">
                 <input type="text" placeholder="First Name" onChange={this.onChange.bind(this, "first_name")}/>
                 <input type="text" placeholder="Last Name" onChange={this.onChange.bind(this,"last_name")}/>
                 <input type="text" placeholder="Email" onChange={this.onChange.bind(this, "email")}/>
@@ -45,25 +44,22 @@ const RecipientRegPage = React.createClass({
                 <input type="text" placeholder="City" />
                 <input type="text" placeholder="Zip Code" onChange={this.onChange.bind(this, "zip")}/>
               </div>
-              <div>
-                <input type="checkbox" value="ebt" /> ebt
-                <input type="checkbox" value="medicade" />medicade
-                <input type="checkbox" value="section 8" />section 8
-                <input type="checkbox" value="none" />none
+              <div className="regPageBox2">
+                <input type="checkbox" value="ebt" /> <span>EBT</span>
+                <input type="checkbox" value="medicaid" />MEDICAID
+                <input type="checkbox" value="section 8" />SECTION 8
+                <input type="checkbox" value="none" />NONE
                 <select>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
+                  <option value="1">1 - 2 members</option>
+                  <option value="2">3 - 5 members</option>
+                  <option value="3">6 - 8 members</option>
+                  <option value="4">9 - 11 members</option>
                 </select>
               </div>
               <div>
-                <input type="submit"/>
+                <input className="registerButton" type="submit" />
               </div>
             </form>
-            </div>
-          </div>
         </div>
       </div>
       )

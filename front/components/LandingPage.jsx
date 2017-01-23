@@ -29,7 +29,7 @@ const LandingPage = React.createClass({
             <img src="/logo.png"/>
         </div>
           <div className="navbarTwo">
-            <form onSubmit={this.onSubmit}>          
+            <form onSubmit={this.onSubmit}>
               <div className="navbarSignUp">
                 {/* <h4 className="login">Username:</h4>*/}
                 {/* <h4 className="login">Password:</h4>*/}
@@ -47,12 +47,16 @@ const LandingPage = React.createClass({
         <div className="buttonLanding">
           <div className="landingPageButtons">
             <img src="/l.jpg" />
-            <button className="landingPageButton1" onClick={this.donorRegistration}>
-              <h2 className="landingButtonTitle"> Give A Box </h2>
-            </button>
-            <button className="landingPageButton2" onClick={this.recipientRegistration}>
-              <h2 className="landingButtonTitle"> Get A Box </h2>
-            </button>
+          <div className="landTitleText">
+            <h1>6.3 Million Households Experience Very Low Food Security. <br/> For Those Who Just Need A little Extra Chow!</h1>
+
+          </div>
+            <button className="landingPageButton1" onClick={this.donorRegistration}></button>
+            <button className="landingPageButton2" onClick={this.recipientRegistration}></button>
+            <div className="landingButtonTitle">
+              <h2 className="landingButtonTitle1" onClick={this.donorRegistration}> Give A Box </h2>
+              <h2 className="landingButtonTitle2" onClick={this.recipientRegistration}> Get A Box </h2>
+            </div>
           </div>
         </div>
         {/*end of body*/}
