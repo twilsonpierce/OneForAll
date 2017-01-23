@@ -1,6 +1,6 @@
 import React from 'react';
 import store from '../store/store'
-
+import Map from './Map';
 
 const Recipient = React.createClass({
   render(){
@@ -14,7 +14,7 @@ const Recipient = React.createClass({
         <button>package1</button>
         <button>package2</button>
         <button>package3</button>
-        {/*GOOGLE MAPS*/}
+        <Map />
       </div>
       )
   }
