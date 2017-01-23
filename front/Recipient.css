@@ -157,7 +157,7 @@ font-size: 1.7em;
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   font-family: Trebuchet MS, sans-serif;
   font-weight: bold;
   font-size: 2em;
@@ -241,4 +241,64 @@ input.regA{
   margin-bottom:10px;
   color: #998F8F;
   font-family: Helvetica, sans-serif;
+}
+
+/*----------Recipient Package Page-----------*/
+
+.packageTextBox{
+  display: flex;
+  justify-content: center;
+}
+
+.packageText{
+  font-family: Helvetica, sans-serif;
+  color: gray;
+  width: 100px;
+
+}
+
+.packages{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.packages img{
+  padding: 5px;
+}
+
+.package1{
+  display: flex;
+  justify-content: center;
+}
+
+.packageA{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonPackage{
+  width: 150px;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  background-color: #7D5AB5;
+}
+
+
+.mainPackage{
+  display: flex;
+  justify-content: center;
+}
+
+.mapContainer{
+  display:flex;
+  justify-content: center;
+}
+
+#map{
+  border: 3px solid #7D5AB5;
+  margin-bottom: 25px;
 }
