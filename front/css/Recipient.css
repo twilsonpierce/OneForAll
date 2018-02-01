@@ -4,6 +4,11 @@ body, html {
 }
 
 /*-------NAVBAR---------*/
+
+img#navbarLogo{
+  height:104px;
+  margin-left: 20px;
+}
 .navbarParent{
   display:flex;
   justify-content: space-between;
@@ -41,10 +46,7 @@ h4.login{
 }
 
 .navbarOne img{
-  height: 60px;
-  width: 135px;
-  margin: 0px, 0px, 0px, 0px;
-  padding-left: 15px;
+  height: 104px;
 }
 
 
@@ -138,10 +140,6 @@ font-size: 1.7em;
 }
 /*---------REGISTRATION PAGE -------------*/
 
-.navbarBorder{
-  border-bottom: 2px solid gray;
-  padding-top: 10px;
-}
 
 .receiveIntro1{
   display: flex;
