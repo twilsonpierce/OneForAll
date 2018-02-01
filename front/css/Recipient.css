@@ -75,7 +75,7 @@ button.loginButton{
 }
 
 h2.landingButtonTitle {
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 2em;
 }
@@ -165,7 +165,7 @@ form.regPage{
   width: 447px;
   height: 441px;
   border-radius: 15px;
-  border: 1px solid #6E3083;
+  border: 2px solid black;
   position: absolute;
   top: 210px;
   left: 190px;
@@ -177,7 +177,7 @@ form.regPage{
   width: 356px;
   height: 237px;
   border-radius: 15px;
-  border: 1px solid #6E3083;
+  border: 2px solid black;
   position: absolute;
   top: 295px;
   left: 690px;
@@ -186,13 +186,14 @@ form.regPage{
 .registerButton{
   width: 189px;
   height: 43px;
-  background-color: #EE8F52;
-  border-radius: 15px;
+  background-color: #bbcc00;
+  border-radius: 24px;
+  border: none;
   position: absolute;
   top: 565px;
   left: 775px;
-  border: none;
-  font-family: Avantgarde, sans-serif;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .regPageBoxA{
@@ -221,16 +222,21 @@ input.regA{
 
 .regPageAssist{
   color: #998F8F;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .regPageAssist2{
   margin-top: 10px;
   margin-bottom:10px;
   color: #998F8F;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
+p#recieveHeadline{
+  margin-top: -78px;
+  font-family: 'Montserrat', sans-serif;
+  color: Black;
+}
 /*----------Recipient Package Page-----------*/
 
 .packageTextBox{
