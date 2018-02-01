@@ -47,9 +47,6 @@ const LandingPage = React.createClass({
         <div className="buttonLanding">
           <div className="landingPageButtons">
             <img src="/l.jpg" />
-            <div className="landTitleText">
-              <h1>6.3 Million Households Experience Very Low Food Security. <br/> We're Here For Those Who Just Need A Little Extra Chow!</h1>
-            </div>
             <button className="landingPageButton1" onClick={this.donorRegistration}></button>
             <button className="landingPageButton2" onClick={this.recipientRegistration}></button>
             <div className="landingButtonTitle">
