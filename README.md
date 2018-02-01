@@ -6,15 +6,14 @@
 
 ### Introduction 
 
-A donation based free food web application that offers direct delivery service for low income families in need.
+**OneForAll** is a donation based free food web application that offers direct delivery service for low income families in need.
 In collaboration with my team,our goal from the start was to help eliminate world hunger by bringing food drives online. 
 
 
 ### App Concept + Design Approach 
 
 **"49 million people** are officially food insecure: They don’t always know where their next meal is coming from. 
-From our farms to grocery stores to dinner tables, **30%** of the food we grow is never eaten."**- The National Geographic **
-
+From our farms to grocery stores to dinner tables, **30%** of the food we grow is never eaten." **-The National Geographic**
 
 
 ### Beyond MVP 
