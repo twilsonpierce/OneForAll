@@ -22,4 +22,12 @@ From our farms to grocery stores to dinner tables, **30%** of the food we grow i
 - Partner up with potential retailers, restaurants and churches to further our steps.
 - Build out a **bonus rewards** feature for every donor that has the most donations within a month. 
 
+### Installation 
+
+```
+Git Clone 
+CD into the folder from your terminal
+npm install 
+npm start(Runs the app on LocalHost:3000) 
+```
 
