@@ -8,4 +8,4 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, '../front/index.html'))
 })
 
-app.listen(3000)
+app.listen(3000, () => console.log('Running on port 3000'))
