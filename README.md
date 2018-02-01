@@ -17,9 +17,7 @@ In collaboration with my team,our goal from the start was to help eliminate worl
 
 ### Beyond MVP 
 
-
-
-
-### Watch It LIVE! 
-
+- Target certain geographical areas in local communities within New York City first. 
+- Partner up with potential retailers, restaurants and churches to further our steps.
+- Build out a bonus rewards feature for every donor that has the most donates within a month wins a free prize!
 
