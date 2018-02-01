@@ -25,6 +25,7 @@ From our farms to grocery stores to dinner tables, **30%** of the food we grow i
 ### Installation 
 
 ```
+Fork Repo
 Git Clone 
 CD into the folder from your terminal
 npm install 
