@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/store'
 import Map from './Map';
-import '../Recipient.css';
+import '../css/Recipient.css';
 
 const Recipient = React.createClass({
   render(){
@@ -9,11 +9,9 @@ const Recipient = React.createClass({
       <div>
         <div>
           <div className="navbarOne">
-            <img src="/logo.png"/>
+            <img  alt="logo" src="/oneforallLogo.jpg"/>
           </div>
-          <div className="navbarBorder"></div>
         </div>
-
         <div className="receiveIntro1">
           Please Choose Your Package
         </div>

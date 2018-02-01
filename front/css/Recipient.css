@@ -17,7 +17,7 @@ img#navbarLogo{
 .navbarOne{
   background-color: white;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .navbarSignUp{
@@ -200,12 +200,74 @@ form.regPage{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top:15px;
 }
 
-input.regA{
-  width: 300px;
+
+input.regA1{
+  width: 225px;
   height: 30px;
   margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+input.regA2{
+  width: 225px;
+  height: 30px;
+  margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+input.regA3{
+  width: 225px;
+  height: 30px;
+  margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+input.regA4{
+  width: 225px;
+  height: 30px;
+  margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+input.regA5{
+  width: 225px;
+  height: 30px;
+  margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+input.regA6{
+  width: 225px;
+  height: 30px;
+  margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+input.regA7{
+  width: 225px;
+  height: 30px;
+  margin-top: 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
 }
 
 .regPageBox2{
@@ -233,7 +295,7 @@ input.regA{
 }
 
 p#recieveHeadline{
-  margin-top: -78px;
+  margin-top: -85px;
   font-family: 'Montserrat', sans-serif;
   color: Black;
 }

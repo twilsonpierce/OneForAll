@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/store';
 import {login} from '../actions/actions';
-import '../Recipient.css';
+import '../css/Recipient.css';
 
 const LandingPage = React.createClass({
   getInitialState(){
@@ -25,9 +25,9 @@ const LandingPage = React.createClass({
       <div className="navbar">
         {/*nav bar */}
       <div className="navbarParent">
-        <div className="navbarOne">
-            <img src="/logo.png"/>
-        </div>
+          <div className="logoDiv">
+            <img id="navbarLogo"alt="logo"src="/oneforallLogo.jpg"/> 
+          </div>
           <div className="navbarTwo">
             <form onSubmit={this.onSubmit}>
               <div className="navbarSignUp">
@@ -46,12 +46,11 @@ const LandingPage = React.createClass({
         {/*Body*/}
         <div className="buttonLanding">
           <div className="landingPageButtons">
-            <img src="/l.jpg" />
             <button className="landingPageButton1" onClick={this.donorRegistration}></button>
             <button className="landingPageButton2" onClick={this.recipientRegistration}></button>
             <div className="landingButtonTitle">
-              <h2 className="landingButtonTitle1" onClick={this.donorRegistration}> Give A Box </h2>
-              <h2 className="landingButtonTitle2" onClick={this.recipientRegistration}> Get A Box </h2>
+              <h2 className="landingButtonTitle1" onClick={this.donorRegistration}> GIVE A BOX </h2>
+              <h2 className="landingButtonTitle2" onClick={this.recipientRegistration}> GET A BOX </h2>
             </div>
           </div>
         </div>
