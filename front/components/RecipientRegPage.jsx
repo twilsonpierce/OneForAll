@@ -36,7 +36,6 @@ const RecipientRegPage = React.createClass({
               <p id="recieveHeadline">You’re On Your Way <br/> To Receiving Your First Box!</p>
             </div>
 
-
             <form onSubmit={this.onSubmit} className="regPage">
               <div className="regPageBox1">
                 <div className="regPageBoxA">
@@ -56,10 +55,10 @@ const RecipientRegPage = React.createClass({
               <div className="regPageBox2">
                 <h4 className="regPageAssist">Do you have public assistance? <br/> Check all that apply:</h4>
                 <div className="regPageBoxB">
-                <div className="regB"><input type="checkbox" value="ebt" /><span>EBT</span></div>
-                <div className="regC"><input type="checkbox" value="medicaid" /><span>MEDICAID</span></div>
-                <div className="regD"><input type="checkbox" value="section 8" /><span>SECTION 8</span></div>
-                <div className="regE"><input type="checkbox" value="none" /><span>NONE</span></div>
+                <div className="regB"><label className="checkbox green"><input type="checkbox" value="ebt" /><span className="indicator"></span>EBT</label></div>
+                <div className="regC"><label className="checkbox green"><input type="checkbox" value="medicaid" /><span className="indicator"></span>MEDICAID</label></div>
+                <div className="regD"><label className="checkbox green"><input type="checkbox" value="section 8" /><span className="indicator"></span> SECTION 8</label></div>
+                <div className="regE"><label className="checkbox green"><input type="checkbox" value="none" /><span className="indicator"></span>NONE</label></div>
                 <h4 className="regPageAssist2"># of members in household?</h4>
                   <select>
                     <option value="0"></option>

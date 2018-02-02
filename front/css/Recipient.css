@@ -150,8 +150,8 @@ font-size: 1.7em;
   font-weight: bold;
   font-size: 2em;
   margin: 40px 10px 20px 10px;
-  color: #7D5AB5;
-  text-shadow: 0 1px 0px black, 0 -3px 1px rgba(0,0,0,.1), 0 4px 4px rgba(0,0,0,.1);
+  color: black;
+  /*text-shadow: 0 1px 0px black, 0 -3px 1px rgba(0,0,0,.1), 0 4px 4px rgba(0,0,0,.1);*/
 }
 
 form.regPage{
@@ -270,6 +270,54 @@ input.regA7{
   border-bottom: 1px solid black;
 }
 
+/* CHECK BOX CSS */
+
+label.checkbox.green {
+  position: relative;
+  margin-left: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.checkbox.green input[type="checkbox"] {
+  position: absolute;
+  margin-left: -15px;
+  opacity: 0;
+}
+
+label.checkbox.green input[type="checkbox"]:focus ~ span{
+  border: 2px solid #aab0b9;
+}
+
+label.checkbox.green input[type="checkbox"]:focus:checked ~ span{
+  border: 2px solid #bbcc00;
+}
+
+label.checkbox.green input[type="checkbox"]:checked ~ span {
+  color: #FFFFFF;
+  background: #bbcc00 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
+  border: 2px solid #bbcc00;
+}
+
+label.checkbox.green span {
+  border-radius: 3px;
+  position: absolute;
+  /*left: 0;*/
+/*  top: -2px;*/
+  width: 1rem;
+  height: 1rem;
+  background-color: #FFFF;
+  margin-left:-22px;
+  border: 2px solid #d4d7dc;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* CHECK BOX CSS ENDS */
 .regPageBox2{
   display: flex;
   flex-direction: column;
@@ -296,8 +344,6 @@ input.regA7{
 
 p#recieveHeadline{
   margin-top: -85px;
-  font-family: 'Montserrat', sans-serif;
-  color: Black;
 }
 /*----------Recipient Package Page-----------*/
 
