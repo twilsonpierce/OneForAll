@@ -10,6 +10,16 @@
 In collaboration with my team,our goal from the start was to help eliminate world hunger by bringing food drives online. 
 
 
+### Installation 
+
+```
+Fork Repo
+Git Clone 
+CD into the folder from your terminal
+npm install 
+npm start(Runs the app on LocalHost:3000) 
+```
+
 ### App Concept + Design Approach 
 
 **"49 million people** are officially food insecure: They don’t always know where their next meal is coming from. 
@@ -21,14 +31,4 @@ From our farms to grocery stores to dinner tables, **30%** of the food we grow i
 - Target certain geographical areas in local communities within New York City first. 
 - Partner up with potential retailers, restaurants and churches to further our steps.
 - Build out a **bonus rewards** feature for every donor that has the most donations within a month. 
-
-### Installation 
-
-```
-Fork Repo
-Git Clone 
-CD into the folder from your terminal
-npm install 
-npm start(Runs the app on LocalHost:3000) 
-```
 
