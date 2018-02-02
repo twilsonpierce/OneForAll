@@ -33,11 +33,9 @@ const LandingPage = React.createClass({
               <div className="navbarSignUp">
                 {/* <h4 className="login">Username:</h4>*/}
                 {/* <h4 className="login">Password:</h4>*/}
-                <input className="inputBox" type="text" placeholder="Username" onChange={this.change.bind(this,"email")} value={this.state.email}/>
-                <input className="inputBox" type="password" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
-                <button className="loginButton">
-                  <img className="loginButton" src="/login-button.png" />
-                </button>
+                <h4 className="inputBoxText1">Email</h4><input className="inputBox" type="text" placeholder="Username" onChange={this.change.bind(this,"email")} value={this.state.email}/>
+                <h4 className="inputBoxText2">Password</h4><input className="inputBox" type="password" placeholder="Password" onChange={this.change.bind(this,"password")} value={this.state.password}/>
+                <button className="loginButton">Login</button>
               </div>
             </form>
             </div>
